@@ -1,0 +1,154 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(https://media.istockphoto.com/photos/light-lime-defocused-blurred-motion-abstract-background-picture-id1138288756?k=20&m=1138288756&s=612x612&w=0&h=JgCn0VZESqui_uMnlhfFulGfyU0QsxMbhVnLt4VY72Q=); */
+    background-color: #ffc7d4;
+    background-size: cover;
+}
+
+#left{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.219); */
+}
+
+#right{
+    overflow: auto;
+    padding: 0px 20px;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+#song button{
+    /* border: transparent; */
+    background-color: transparent;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 60%;
+    background-color: #FFA8B5;
+    font-family: "philosopher";
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#center h3{
+    margin-top: 15px;
+}
+
+#center h5{
+    margin: 5px;
+}
+
+#music{
+    width: 150px;
+    height: 150px;
+}
+
+#music img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+#control{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn{
+    margin: 10px 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 100%;
+    border: transparent;
+}
+
+#btn2{
+    margin-left: 2px;
+}
+
+#song{
+    font-family: "philosopher";
+    border-radius: 5px;
+    padding: 5px 5px;
+    width: 100%;
+    /* height: 80px; */
+    background-color: #ffa8b57c;
+    margin-bottom: 10px;
+}
+
+#song h5{
+    margin: 3px 0px;
+}
+
+#song button{
+    padding: 3px 10px;
+}
+
+#right:nth-last-child(){
+    margin-bottom: 0px;
+}
+
+.btn i{
+    font-size: 25px;
+}
+
+@media (max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+
+    #left{
+        width: 100%;
+        height: 100%;
+    }
+
+    #music {
+        width: 120px;
+        height: 120px;
+    }
+
+    #center{
+        width: 65%;
+        height: 100%;
+    }
+
+    #right{
+        /* overflow: auto; */
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #right::-webkit-scrollbar{
+        display: none;
+    }
+
+}
